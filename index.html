@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Nicketo Micketo</title>
+  <link rel="shortcut icon" href="https://jdgmiles.github.io/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <center>
+    <br><br><br>
+
+    <table id="cards-in-play">
+      <tr>
+        <td id="1-tcount" class="truecount">true-count</td>
+        <td>1</td>
+        <td><button onclick="alter(1,-1)">−</button></td>
+        <td class="middlecolumn" id="1-count"></td>
+        <td><button onclick="alter(1,1)">+</button></td>
+        <td id="1-edge">edge</td>
+      </tr>
+      <tr>
+        <td id="2-tcount" class="truecount">true-count</td>
+        <td>2</td>
+        <td><button onclick="alter(2,-1)">−</button></td>
+        <td id="2-count"></td>
+        <td><button onclick="alter(2,1)">+</button></td>
+        <td id="2-edge">edge</td>
+      </tr>
+      <tr>
+        <td id="3-tcount" class="truecount">true-count</td>
+        <td>3</td>
+        <td><button onclick="alter(3,-1)">−</button></td>
+        <td id="3-count"></td>
+        <td><button onclick="alter(3,1)">+</button></td>
+        <td id="3-edge">edge</td>
+      </tr>
+      <tr>
+        <td id="4-tcount" class="truecount">true-count</td>
+        <td>4</td>
+        <td><button onclick="alter(4,-1)">−</button></td>
+        <td id="4-count"></td>
+        <td><button onclick="alter(4,1)">+</button></td>
+        <td id="4-edge">edge</td>
+      </tr>
+      <tr>
+        <td id="5-tcount" class="truecount">true-count</td>
+        <td>5</td>
+        <td><button onclick="alter(5,-1)">−</button></td>
+        <td id="5-count"></td>
+        <td><button onclick="alter(5,1)">+</button></td>
+        <td id="5-edge">edge</td>
+      </tr>
+      <tr>
+        <td id="6-tcount" class="truecount">true-count</td>
+        <td>6</td>
+        <td><button onclick="alter(6,-1)">−</button></td>
+        <td id="6-count"></td>
+        <td><button onclick="alter(6,1)">+</button></td>
+        <td id="6-edge">edge</td>
+      </tr>
+      <tr>
+        <td id="7-tcount" class="truecount">true-count</td>
+        <td>7</td>
+        <td><button onclick="alter(7,-1)">−</button></td>
+        <td id="7-count"></td>
+        <td><button onclick="alter(7,1)">+</button></td>
+        <td id="7-edge">edge</td>
+      </tr>
+      <tr>
+        <td id="8-tcount" class="truecount">true-count</td>
+        <td>8</td>
+        <td><button onclick="alter(8,-1)">−</button></td>
+        <td id="8-count"></td>
+        <td><button onclick="alter(8,1)">+</button></td>
+        <td id="8-edge">edge</td>
+      </tr>
+      <tr>
+        <td id="9-tcount" class="truecount">true-count</td>
+        <td>9</td>
+        <td><button onclick="alter(9,-1)">−</button></td>
+        <td id="9-count"></td>
+        <td><button onclick="alter(9,1)">+</button></td>
+        <td id="9-edge">edge</td>
+      </tr>
+      <tr>
+        <td id="0-tcount" class="truecount">true-count</td>
+        <td>0</td>
+        <td><button onclick="alter(0,-1)">−</button></td>
+        <td id="0-count"></td>
+        <td><button onclick="alter(0,1)">+</button></td>
+        <td id="0-edge">edge</td>
+      </tr>
+      <tr>
+        <td>deck</td>
+        <td></td>
+        <td><button onclick="deck(-1)">−</button></td>
+        <td></td>
+        <td><button onclick="deck(1)">+</button></td>
+      </tr>
+      <tr>
+        <td>total</td>
+        <td></td>
+        <td id="total"></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <button class="launch-button" onclick="launch()">Calculate Probabilities</button>
+
+    <span class="output">
+      <br>
+      <b>Report:</b>
+      <br>
+      <span id="bongo">Statistical report is generated here</span>
+      <br>
+      <b>Sample Game:</b>
+      <br>
+      <span id="drum">Sample game appears here</span>
+    </span>
+
+  </center>
+</body>
+
+</html>
+
+<script type="text/javascript" src="code.js"></script>
